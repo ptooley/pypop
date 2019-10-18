@@ -228,35 +228,6 @@ some convenience scripts are provided.</p>
 scalings metrics.  By default output is provided in the form of a csv file containing the metrics,
 along with images with the metric table and a speedup scaling plot.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ pypop-mpi-metrics -h
-/usr/lib64/python3.6/site-packages/matplotlib/backends/backend_gtk3agg.py:16: UserWarning: The Gtk3Agg backend is known to not work on Python 3.x with pycairo. Try installing cairocffi.
-  &quot;The Gtk3Agg backend is known to not work on Python 3.x with pycairo. &quot;
-/home/phil/repos/pypop/pypop/cli.py:9: UserWarning: 
-This call to matplotlib.use() has no effect because the backend has already
-been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
-or matplotlib.backends is imported for the first time.
-
-The backend was *originally* set to &#39;GTK3Agg&#39; by the following code:
-  File &quot;/home/phil/.local/bin/pypop-mpi-metrics&quot;, line 11, in &lt;module&gt;
-    load_entry_point(&#39;pypop&#39;, &#39;console_scripts&#39;, &#39;pypop-mpi-metrics&#39;)()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point
-    return get_distribution(dist).load_entry_point(group, name)
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2728, in load_entry_point
-    return ep.load()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2346, in load
-    return self.resolve()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2352, in resolve
-    module = __import__(self.module_name, fromlist=[&#39;__name__&#39;], level=0)
-  File &quot;/home/phil/repos/pypop/pypop/__init__.py&quot;, line 9, in &lt;module&gt;
-    from . import metrics
-  File &quot;/home/phil/repos/pypop/pypop/metrics.py&quot;, line 13, in &lt;module&gt;
-    import matplotlib.pyplot as plt
-  File &quot;/usr/lib64/python3.6/site-packages/matplotlib/pyplot.py&quot;, line 71, in &lt;module&gt;
-    from matplotlib.backends import pylab_setup
-  File &quot;/usr/lib64/python3.6/site-packages/matplotlib/backends/__init__.py&quot;, line 16, in &lt;module&gt;
-    line for line in traceback.format_stack()
-
-
-  use(&quot;agg&quot;)
 usage: pypop-mpi-metrics [-h] [--no-csv] [--no-metric-table]
                          [--no-scaling-plot] [--csv CSV]
                          [--metric-table METRIC_TABLE]
@@ -293,35 +264,6 @@ optional arguments:
 MPI+OpenMP strong scalings metrics.  By default output is provided in the form of a csv file
 containing the metrics, along with images with the metric table and a speedup scaling plot.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ pypop-hybrid-metrics -h
-/usr/lib64/python3.6/site-packages/matplotlib/backends/backend_gtk3agg.py:16: UserWarning: The Gtk3Agg backend is known to not work on Python 3.x with pycairo. Try installing cairocffi.
-  &quot;The Gtk3Agg backend is known to not work on Python 3.x with pycairo. &quot;
-/home/phil/repos/pypop/pypop/cli.py:9: UserWarning: 
-This call to matplotlib.use() has no effect because the backend has already
-been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
-or matplotlib.backends is imported for the first time.
-
-The backend was *originally* set to &#39;GTK3Agg&#39; by the following code:
-  File &quot;/home/phil/.local/bin/pypop-hybrid-metrics&quot;, line 11, in &lt;module&gt;
-    load_entry_point(&#39;pypop&#39;, &#39;console_scripts&#39;, &#39;pypop-hybrid-metrics&#39;)()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 487, in load_entry_point
-    return get_distribution(dist).load_entry_point(group, name)
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2728, in load_entry_point
-    return ep.load()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2346, in load
-    return self.resolve()
-  File &quot;/usr/lib64/python3.6/site-packages/pkg_resources/__init__.py&quot;, line 2352, in resolve
-    module = __import__(self.module_name, fromlist=[&#39;__name__&#39;], level=0)
-  File &quot;/home/phil/repos/pypop/pypop/__init__.py&quot;, line 9, in &lt;module&gt;
-    from . import metrics
-  File &quot;/home/phil/repos/pypop/pypop/metrics.py&quot;, line 13, in &lt;module&gt;
-    import matplotlib.pyplot as plt
-  File &quot;/usr/lib64/python3.6/site-packages/matplotlib/pyplot.py&quot;, line 71, in &lt;module&gt;
-    from matplotlib.backends import pylab_setup
-  File &quot;/usr/lib64/python3.6/site-packages/matplotlib/backends/__init__.py&quot;, line 16, in &lt;module&gt;
-    line for line in traceback.format_stack()
-
-
-  use(&quot;agg&quot;)
 usage: pypop-hybrid-metrics [-h] [--no-csv] [--no-metric-table]
                             [--no-scaling-plot] [--csv CSV]
                             [--metric-table METRIC_TABLE]
