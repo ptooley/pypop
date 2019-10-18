@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pypop.metrics module &mdash; PyPOP 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/kbd.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PyPOP 0.1 documentation" href="../index.html"/>
+        <link rel="up" title="The PyPOP API" href="pypop.html"/>
+        <link rel="next" title="pypop.plotting module" href="pypop.plotting.html"/>
+        <link rel="prev" title="pypop.extrae module" href="pypop.extrae.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../doc.html" class="icon icon-home"> PyPOP
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installing PyPOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pypop.html">The PyPOP API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pypop.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pypop.cli.html">pypop.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.dimemas.html">pypop.dimemas module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.examples.html">pypop.examples module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.extrae.html">pypop.extrae module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pypop.metrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.plotting.html">pypop.plotting module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.prv.html">pypop.prv module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.traceset.html">pypop.traceset module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pypop.utils.html">pypop.utils module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../doc.html">PyPOP</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../doc.html">Docs</a> &raquo;</li>
+        
+          <li><a href="pypop.html">The PyPOP API</a> &raquo;</li>
+        
+      <li>pypop.metrics module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/pypop.metrics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pypop.metrics">
+<span id="pypop-metrics-module"></span><h1>pypop.metrics module<a class="headerlink" href="#module-pypop.metrics" title="Permalink to this headline">¶</a></h1>
+<p>Routines for calculating and displaying the POP metrics.</p>
+<dl class="class">
+<dt id="pypop.metrics.MPI_Metrics">
+<em class="property">class </em><code class="descclassname">pypop.metrics.</code><code class="descname">MPI_Metrics</code><span class="sig-paren">(</span><em>stats_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#MPI_Metrics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.MPI_Metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pypop.metrics.MetricSet" title="pypop.metrics.MetricSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">pypop.metrics.MetricSet</span></code></a></p>
+<dl class="attribute">
+<dt id="pypop.metrics.MPI_Metrics.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#pypop.metrics.MPI_Metrics.metrics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pypop.metrics.MPI_OpenMP_Metrics">
+<em class="property">class </em><code class="descclassname">pypop.metrics.</code><code class="descname">MPI_OpenMP_Metrics</code><span class="sig-paren">(</span><em>stats_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#MPI_OpenMP_Metrics"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.MPI_OpenMP_Metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pypop.metrics.MetricSet" title="pypop.metrics.MetricSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">pypop.metrics.MetricSet</span></code></a></p>
+<dl class="attribute">
+<dt id="pypop.metrics.MPI_OpenMP_Metrics.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#pypop.metrics.MPI_OpenMP_Metrics.metrics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pypop.metrics.Metric">
+<em class="property">class </em><code class="descclassname">pypop.metrics.</code><code class="descname">Metric</code><span class="sig-paren">(</span><em>key</em>, <em>level</em>, <em>displayname=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#Metric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.Metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="simple">
+<dt>freq_corr: bool</dt><dd><p>Correct performance metrics based on average clock frequency (use to
+correct for node dynamic clocking issues).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="pypop.metrics.MetricSet">
+<em class="property">class </em><code class="descclassname">pypop.metrics.</code><code class="descname">MetricSet</code><span class="sig-paren">(</span><em>stats_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#MetricSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.MetricSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Calculate POP MPI metrics for the given statistics</p>
+<p>Statistics data is expected to have been produced with <cite>collect_statistics()</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stats_dict</strong> (dict or list of <cite>pd.DataFrame</cite>) – Statistics as collected with <cite>collect_statistics()</cite>. Dictionary keys will be
+used as the dataframe index. If a list, a dict will be constructed by
+enumeration.</p></li>
+<li><p><strong>ref_key</strong> (<em>scalar</em>) – Key of stats_dict that should be used as the reference for calculation of
+scaling values.  If not specified, the lexical minimum key will be used (i.e
+<code class="docutils literal notranslate"><span class="pre">min(stats_dict.keys())</span></code>.</p></li>
+<li><p><strong>sort_keys</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – If true (default), lexically sort the keys in the returned DataFrame.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="pypop.metrics.MetricSet.metric_data">
+<code class="descname">metric_data</code><a class="headerlink" href="#pypop.metrics.MetricSet.metric_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pypop.metrics.MetricSet.metrics">
+<code class="descname">metrics</code><a class="headerlink" href="#pypop.metrics.MetricSet.metrics" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pypop.metrics.MetricSet.plot_scaling">
+<code class="descname">plot_scaling</code><span class="sig-paren">(</span><em>x_key='Number of Processes'</em>, <em>y_key='Speedup'</em>, <em>label=None</em>, <em>title=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#MetricSet.plot_scaling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.MetricSet.plot_scaling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot scaling graph with region shading.</p>
+<p>Plots scaling data from pandas dataframe(s). The 0-80% and 80-100% scaling
+regions are shaded for visual identification.  Multiple scaling lines may be
+plotted by passing a dict of dataframes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<cite>pd.DataFrame</cite> or dict of DataFrames) – (Dict of) Pandas DataFrame containing scaling data.</p></li>
+<li><p><strong>x_key</strong> (<em>scalar</em>) – Key of Dataframe column to use as x-axis.</p></li>
+<li><p><strong>y_key</strong> (<em>scalar</em>) – key of Dataframe column to use as y-axis.</p></li>
+<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)"><em>None</em></a>) – Label to be used for y-axis and data series. Defaults to <cite>y_key</cite>.</p></li>
+<li><p><strong>title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)"><em>None</em></a>) – Optional title for plot.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>figure</strong> – Figure containing complete scaling plot.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>matplotlib.figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pypop.metrics.MetricSet.plot_table">
+<code class="descname">plot_table</code><span class="sig-paren">(</span><em>columns_key=None</em>, <em>title=None</em>, <em>columns_label=None</em>, <em>good_thres=0.8</em>, <em>bad_thres=0.5</em>, <em>skipfirst=0</em>, <em>bwfirst=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pypop/metrics.html#MetricSet.plot_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pypop.metrics.MetricSet.plot_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot Metrics in colour coded Table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>columns_key</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)"><em>None</em></a>) – Key to pandas dataframe column containing column heading data (default
+“Number of Processes”).</p></li>
+<li><p><strong>title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)"><em>None</em></a>) – Title for table.</p></li>
+<li><p><strong>columns_label</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)"><em>None</em></a>) – Label to apply to column heading data (defaults to value of
+<cite>columns_key</cite>).</p></li>
+<li><p><strong>good_thres</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em> [</em><em>0.0 - 1.0</em><em>]</em>) – Threshold above which cells are shaded green.</p></li>
+<li><p><strong>bad_thres</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em> [</em><em>0.0 - 1.0</em><em>]</em>) – Threshold below which cells are shaded red.</p></li>
+<li><p><strong>skipfirst</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Skip output of first N columns of metric data (default 0).</p></li>
+<li><p><strong>bwfirst</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Skip coloring of first N columns of metric data (default 0).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>figure</strong> – Figure containing the metrics table.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><cite>matplotlib.figure.Figure</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pypop.plotting.html" class="btn btn-neutral float-right" title="pypop.plotting module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pypop.extrae.html" class="btn btn-neutral" title="pypop.extrae module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, The Numerical Algorithms Group, Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
